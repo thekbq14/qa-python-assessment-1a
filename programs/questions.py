@@ -35,7 +35,13 @@
     # What was the name of the function we have seen to check the length of a container?  Use your CLI to access the Python documentation and get help(len).
 
 def one(input1, input2):
-    pass
+    if len (str(input1)) > len(str(input2)):
+        return str(input1)
+    if len(str(input1)) < len(str(input2)):
+        return str(input2)
+    else:
+        return str(input1) + " " + (str(input2))
+    
 
 
     # <QUESTION 2>
@@ -61,7 +67,16 @@ def one(input1, input2):
     # Use your CLI to access the Python documentation and get help manipulating strings - help(str).
 
 def two(input):
-    pass
+    count = {}
+    for bert in input:
+        if bert in input:
+            count [bert] += 2
+            return input
+        else:
+            return ""
+
+
+
 
 
     # <QUESTION 3>
@@ -84,7 +99,15 @@ def two(input):
     # No Hints for this question
 
 def three(arg1):
-    pass
+    if arg1 % 3 == 0 and arg1 % 5 == 0:
+        return "fizzbuzz"
+    elif arg1 % 3 == 0:
+        return "fizz"
+    elif arg1 % 5 == 0:
+        return "buzz"
+    else:
+        return "null"
+    
 
 
     # <QUESTION 4>
@@ -110,7 +133,11 @@ def three(arg1):
     # help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
-    pass
+    #number = arg1.split()
+    sum_of_digits = 0
+    for digit in str(arg1):
+     sum_of_digits += int(digit)
+     return max(sum_of_digits)
 
 
     # <QUESTION 5>
@@ -160,7 +187,16 @@ def five(input):
     # Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
 def six(input):
-    pass
+    substring = "ei"
+    substringtwo = "ie"
+    if 'c' in input:
+        if substring in input:
+            return True
+    elif substringtwo in input:
+        return True
+    else:
+        return False
+
 
 
     # <QUESTION 7>
@@ -178,7 +214,8 @@ def six(input):
     # How do we ignore case in a String? help(str) may offer some insight.
 
 def seven(input):
-    pass
+    vowles = ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']
+    return len([i for i in input if i in vowles])
 
 
     # <QUESTION 8>
@@ -197,7 +234,10 @@ def seven(input):
     # You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def eight(input):
-    pass
+    input = range(1,10)
+    if input <= 2:
+        return 1
+    #Times every number before input
 
 
     # <QUESTION 9>
@@ -219,7 +259,17 @@ def eight(input):
     # Take a look at the documentation for Strings, List and range.
 
 def nine(inputString, char):
-    pass
+    s = inputString
+    "".join(s.split())
+    s.find('s')
+    s.find('S')
+    s.find('L')
+    
+
+    return char
+
+    #if(char = 0):
+        #return -1
 
 
     # <QUESTION 10>
@@ -239,5 +289,5 @@ def nine(inputString, char):
 
     # How do we find the length of a container, take a look at help(len), you will also need to look at help(str) for String manipulation.
 
-def ten(string, int, char):
-    pass
+#def ten(string, int, char):
+    #if (int = char):
