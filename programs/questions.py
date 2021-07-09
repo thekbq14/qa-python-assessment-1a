@@ -261,9 +261,8 @@ def eight(input):
 def nine(inputString, char):
     s = inputString
     "".join(s.split())
-    s.find('s')
-    s.find('S')
-    s.find('L')
+    s.find('char')
+
     
 
     return char
