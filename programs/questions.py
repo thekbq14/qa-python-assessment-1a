@@ -166,7 +166,11 @@ def four(arg1):
     # help(str) and help(list), you might also need to use a function that can create a list of numbers for you, try help(range).
 
 def five(input):
-    pass
+    large_string = (['owner,nameOfFile,encrypted?,fileSize'])
+    if ('encrypted?' == "true"):
+            return ""
+    else:
+        return 'owner'
 
 
     # <QUESTION 6>
@@ -261,7 +265,7 @@ def eight(input):
 def nine(inputString, char):
     s = inputString
     "".join(s.split())
-    s.find('char')
+    s.find(char)
 
     
 
